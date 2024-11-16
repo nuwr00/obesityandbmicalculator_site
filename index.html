@@ -1,0 +1,293 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUKASI OBESITAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 1em;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: opacity 0.3s;
+        }
+        header.scrolled {
+            opacity: 0.8;
+        }
+        .navbar {
+            background-color: #ff6b6b;
+            overflow: hidden;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar li {
+            margin: 0;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .main-content section {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 1em;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #ff6b6b;
+        }
+        .bmi-calculator {
+            margin-top: 1em;
+            padding: 1em;
+            border: 1px solid #ddd;
+            background-color: #f7f7f7;
+            animation: slideIn 1s ease-out;
+            border-radius: 8px;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .bmi-calculator input {
+            margin: 0.5em;
+            padding: 0.5em;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .bmi-calculator button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 0.5em 1em;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .bmi-calculator button:hover {
+            background-color: #ff4c4c;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+            margin: 0.5em 0;
+            border-radius: 8px;
+            animation: fadeInImage 1s ease-in;
+        }
+        @keyframes fadeInImage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        footer {
+            background-color: #333;
+            color: #f4f4f4;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Website Edukasi Obesitas</h1>
+</header>
+<nav class="navbar">
+    <ul>
+        <li><a href="#pengertian">Pengertian</a></li>
+        <li><a href="#prevalensi">Prevalensi</a></li>
+        <li><a href="#penyebab">Penyebab</a></li>
+        <li><a href="#dampak">Dampak</a></li>
+        <li><a href="#pencegahan">Pencegahan</a></li>
+        <li><a href="#kalkukatorbmi">Kalkulator</a></li>
+        <li><a href="#profil">Profil</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="image-section">
+        <img src="obesitas.jpg">
+    </section>
+
+    <section id="pengertian">
+        <h2>Apa Itu Obesitas?</h2>
+        <p>Obesitas adalah kondisi medis yang ditandai dengan penumpukan lemak tubuh yang berlebihan sehingga dapat memengaruhi kesehatan. Obesitas sering diukur menggunakan Body Mess Index (BMI).</p>
+    </section>
+
+    <section id="prevalensi">
+        <h2>Prevalensi Obesitas</h2>
+        <p>Secara global, obesitas mengalami peningkatan signifikan. Data dari Organisasi Kesehatan Dunia (WHO) menunjukkan bahwa sekitar 13 dari 100 populasi dunia mengalami obesitas pada tahun 2023. Di Asia Tenggara, termasuk Indonesia, prevalensi obesitas pada anak-anak dan remaja meningkat drastis.​</p>
+    </section>
+
+    <section id="penyebab">
+        <h2>Penyebab Obesitas</h2>
+        <h3>1. Pola makan dan kebiasaan makan yang buruk</h3>
+        <p>Mengonsumsi makanan tinggi kalori, gula, lemak jenuh, dan garam dalam jumlah berlebihan dapat menyebabkan penambahan berat badan yang berlebihan.</p>
+        <h3>2. Kurangnya aktivitas fisik</h3>
+        <p>Gaya hidup yang sedentari atau kurang bergerak dapat menyebabkan penurunan pembakaran kalori, yang akhirnya berkontribusi pada penambahan berat badan.</p>
+        <h3>3. Faktor genetik dan riwayat keluarga</h3>
+        <p>Faktor keturunan dapat memengaruhi bagaimana tubuh menyimpan lemak dan bagaimana metabolisme tubuh bekerja.</p>
+        <h3>4. Pengaruh lingkungan dan psikologis</h3>
+        <p>Stres, gangguan tidur, dan tekanan sosial juga dapat memengaruhi pola makan dan tingkat aktivitas seseorang, meningkatkan risiko obesitas</p>
+    </section>
+
+    <section id="dampak">
+        <h2>Dampak Obesitas</h2>
+        <h3>1. Dampak Fisik</h3>
+        <ul>
+            <li>Penyakit kardiovaskular: Seperti penyakit jantung koroner, hipertensi, dan stroke.</li>
+            <li>Diabetes tipe 2: Akibat resistensi insulin yang sering terjadi pada individu obesitas.</li>
+            <li>Gangguan pernapasan: Seperti sleep apnea dan asma.</li>
+            <li>Masalah muskuloskeletal: Misalnya osteoartritis karena tekanan berlebih pada sendi.</li>
+            <li>Gangguan pencernaan: Termasuk penyakit hati berlemak non-alkoholik (NAFLD) dan refluks asam.</li>
+        </ul>
+        <h3>2. Dampak Psikologis</h3>
+        <ul>
+            <li>Depresi dan kecemasan: Karena stigma sosial dan perasaan tidak puas dengan penampilan diri.</li>
+            <li>Rendahnya kepercayaan diri: Obesitas sering dikaitkan dengan bullying atau body shaming, yang dapat memengaruhi harga diri.</li>
+            <li>Gangguan makan: Beberapa orang mungkin mengalami pola makan yang tidak sehat, seperti binge eating disorder.</li>
+        </ul>
+        <h3>3. Dampak Sosial</h3>
+        <ul>
+            <li>Diskriminasi dan stigma: Obesitas sering memicu diskriminasi di tempat kerja, sekolah, atau lingkungan sosial.</li>
+            <li>Kesulitan mobilitas: Aktivitas sehari-hari menjadi lebih sulit dilakukan karena keterbatasan fisik.</li>
+            <li>Beban ekonomi: Biaya perawatan kesehatan untuk penyakit terkait obesitas dan hilangnya produktivitas menjadi tantangan bagi individu dan masyarakat.</li>
+        </ul>  
+    </section>
+
+    <section id="pencegahan">
+        <h2>Tips Mencegah Obesitas</h2>
+        <ul>
+            <li>Pilih Makanan Seimbang: Contoh makanan bergizi, seperti sayuran, buah-buahan, protein sehat, dan karbohidrat kompleks.</li>
+            <li>Batasi Gula dan Lemak Jenuh: Jelaskan efek gula dan lemak jenuh pada penambahan berat badan.</li>
+            <li>Kontrol Porsi: Tips untuk memperhatikan ukuran porsi dan menghindari makan berlebihan.</li>
+            <li>Minum Air Cukup: Bagaimana air membantu metabolisme dan mengurangi konsumsi kalori berlebih.</li>
+            <li>Aktivitas Fisik Teratur: Saran olahraga minimal 30 menit per hari.</li>
+        </ul>
+    </section>
+
+    <section id="kalkulatorbmi">
+        <h2>Kalkulator BMI</h2>
+        <p>Yuk Cek Status BMI kamu!</p>
+        <p>Masukkan tinggi dan berat badan Anda untuk menghitung BMI dan mengetahui status kesehatan Anda:</p>
+        <label for="weight">Berat badan (kg):</label>
+        <input type="number" id="weight" placeholder="misal: 70">
+        <label for="height">Tinggi badan (cm):</label>
+        <input type="number" id="height" placeholder="misal: 170">
+        <button onclick="calculateBMI()">Hitung BMI</button>
+        <p id="bmiResult"></p>
+    </section>
+
+    <section>
+        <h3>Kategori BMI</h3>
+        <ul>
+            <li>Berat badan kurang: BMI < 18,5</li>
+            <li>Berat badan normal: BMI 18,5 – 24,9</li>
+            <li>Berat badan lebih: BMI 25 – 29,9</li>
+            <li>Obesitas: BMI ≥ 30</li>
+        </ul>
+    </section>
+
+    <!-- Kisah Inspiratif Section -->
+    <section class="inspirational-story">
+        <h3>Kisah Inspiratif: Perjalanan Menghadapi Obesitas</h3>
+        <p>Arya Permana, seorang anak dari Karawang, Jawa Barat, yang sempat dinobatkan sebagai anak tergemuk di dunia dengan berat mencapai 192 kg. Arya mengalami kesulitan beraktivitas sehari-hari dan bahkan hanya bisa berbaring. Berkat usaha keras, dukungan medis, dan operasi bariatrik yang mengecilkan lambungnya, Arya berhasil menurunkan berat badannya hingga 83 kg dalam satu tahun. Kini, ia terus berjuang menjaga pola makan sehat dan rutin berolahraga agar berat badannya stabil dan kesehatannya terjaga.</p>
+    </section>
+
+    <button class="show-profile-button" onclick="toggleProfile()">Tampilkan Profil Editor</button>
+
+    <div class="profile" id="profile">
+        <p><strong>Profil Singkat:</strong> Nur Patimah (K021241001) Mahasiswa Ilmu Gizi di Universitas Hasanuddin</p>
+    </div>
+
+</main>
+
+<script>
+    function calculateBMI() {
+        const weight = parseFloat(document.getElementById("weight").value);
+        const height = parseFloat(document.getElementById("height").value) / 100;
+
+        if (isNaN(weight) || isNaN(height)) {
+            document.getElementById("bmiResult").innerText = "Masukkan angka yang valid untuk berat dan tinggi badan.";
+            return;
+        }
+
+        const bmi = weight / (height * height);
+        let message;
+
+        if (bmi < 18.5) {
+            message = "Anda kekurangan berat badan, disarankan untuk meningkatkan frekuensi makan dengan porsi kecil agar asupan kalori bertambah secara bertahap. Makanan yang dipilih sebaiknya padat nutrisi, seperti kacang-kacangan, alpukat, yogurt, dan biji-bijian, untuk memenuhi kebutuhan gizi. Pertimbangkan untuk berkonsultasi dengan profesional kesehatan.";
+        } else if (bmi >= 18.5 && bmi < 24.9) {
+            message = "Berat badan Anda normal, menjaga pola makan seimbang sangat penting agar kondisi tubuh tetap ideal. Asupan makanan yang beragam dengan porsi karbohidrat, protein, lemak, dan serat yang seimbang akan mendukung kesehatan jangka panjang.";
+        } else if (bmi >= 25 && bmi < 29.9) {
+            message = "perbaikan pola makan menjadi langkah pertama yang penting. Sebaiknya, kurangi kalori harian dengan menghindari makanan tinggi lemak, gula, dan garam, serta perhatikan ukuran porsi makanan.";
+        } else {
+            message = "Anda mengalami obesitas, memperbanyak aktivitas fisik dengan olahraga yang sesuai dengan kemampuan fisik, seperti berjalan atau bersepeda, juga dapat membantu mengurangi risiko cedera. Makanan olahan dan cepat saji yang tinggi lemak, gula, dan garam sebaiknya dibatasi untuk membantu mengurangi penumpukan lemak dalam tubuh. Sebaiknya berkonsultasi dengan penyedia layanan kesehatan.";
+        }
+
+        document.getElementById("bmiResult").innerText = `BMI Anda adalah ${bmi.toFixed(1)}. ${message}`;
+    }
+    function toggleProfile() {
+        const profile = document.getElementById("profile");
+        if (profile.style.display === "none" || profile.style.display === "") {
+            profile.style.display = "block";
+        } else {
+            profile.style.display = "none";
+        }
+    }
+
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector("header");
+        header.classList.toggle("scrolled", window.scrollY > 50);
+    });
+</script>
+</body>
+</html>
